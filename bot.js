@@ -91,7 +91,7 @@ client.on('message', async message => {
     /* ========= GEMINI ========= */
 
     const model = genAI.getGenerativeModel({
-      model: 'models/gemini-2.5-flash'
+      model: 'models/gemini-1.5-flash'
     });
 
     const prompt = `
@@ -207,4 +207,5 @@ ${JSON.stringify(jobData.schema)}
 /* ========= START BOT ========= */
 
 client.initialize();
+
 
