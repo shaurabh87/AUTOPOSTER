@@ -1,5 +1,4 @@
 require('dotenv').config();
-const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 /* =========================================
    WHATSAPP → SEO JOB POST BOT (FINAL)
@@ -209,6 +208,7 @@ ${JSON.stringify(jobData.schema)}
 /* ========= START BOT ========= */
 
 client.initialize();
+
 
 
 
