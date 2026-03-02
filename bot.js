@@ -18,6 +18,7 @@ const axios = require('axios');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 /* ========= CONFIG ========= */
+console.log('🔑 GEMINI KEY PREFIX:', GEMINI_API_KEY?.slice(0, 6));
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
@@ -206,3 +207,4 @@ ${JSON.stringify(jobData.schema)}
 /* ========= START BOT ========= */
 
 client.initialize();
+
