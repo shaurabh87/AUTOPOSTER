@@ -18,6 +18,7 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const axios = require('axios');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 /* ========= CONFIG ========= */
 console.log('🔑 GEMINI KEY PREFIX:', GEMINI_API_KEY?.slice(0, 6));
@@ -208,6 +209,7 @@ ${JSON.stringify(jobData.schema)}
 /* ========= START BOT ========= */
 
 client.initialize();
+
 
 
 
