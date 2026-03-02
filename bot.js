@@ -1,3 +1,4 @@
+require('dotenv').config();
 /* =========================================
    WHATSAPP → SEO JOB POST BOT (FINAL)
    ========================================= */
@@ -203,4 +204,5 @@ ${JSON.stringify(jobData.schema)}
 });
 
 /* ========= START BOT ========= */
+
 client.initialize();
